@@ -20,7 +20,7 @@ var Ball = {
             y: (this.canvas.height / 2) - 9,
             moveX: DIRECTION.IDLE,
             moveY: DIRECTION.IDLE,
-            speed: incrementedSpeed || 7 
+            speed: incrementedSpeed || 5 
         };
     }
 };
@@ -325,10 +325,10 @@ var Game = {
             }
  
             // Handle up arrow and w key events
-            if (key.keyCode === 38 || key.keyCode === 87) Pong.player.move = DIRECTION.UP;
+            if (key.key === 38 || key.key === 87) Pong.player.move = DIRECTION.UP;
  
             // Handle down arrow and s key events
-            if (key.keyCode === 40 || key.keyCode === 83) Pong.player.move = DIRECTION.DOWN;
+            if (key.key === 40 || key.key === 83) Pong.player.move = DIRECTION.DOWN;
         });
  
         // Stop the player from moving when there are no keys being pressed.

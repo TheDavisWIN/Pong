@@ -325,7 +325,7 @@ var Game = {
             }
  
             // Handle up arrow and w key events
-            if (key.code === "ArrowUp" || key.c0de === "KeyW") Pong.player.move = DIRECTION.UP;
+            if (key.code === "ArrowUp" || key.code === "KeyW") Pong.player.move = DIRECTION.UP;
  
             // Handle down arrow and s key events
             if (key.code === "ArrowDown" || key.code === "KeyS") Pong.player.move = DIRECTION.DOWN;
